@@ -43,7 +43,7 @@ content/posts/my-post/
 ## Deploying
 
 Push to `main` — the GitHub Action builds and deploys to
-https://lweck.github.io/posts/
+https://lrweck.github.io/posts/
 
 First deploy: enable Pages in repo **Settings → Pages** and set source to **GitHub Actions**.
 

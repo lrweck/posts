@@ -12,9 +12,9 @@ title = "posts"
   description = "Sharing ideas and things I come across in my day-to-day"
 
 [params.author]
-  name = "lweck"
+  name = "lrweck"
   headline = "Sharing ideas and things I see in my day-to-day"
   bio = "Developer writing about tech, observations, and experiments."
   links = [
-    { github = "https://github.com/lweck" },
+    { github = "https://github.com/lrweck" },
   ]
