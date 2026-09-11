@@ -1,4 +1,4 @@
-# lrweck
+# posts
 
 Personal blog built with [Hugo](https://gohugo.io/) + the [Blowfish](https://blowfish.page/) theme, deployed to GitHub Pages.
 
@@ -43,7 +43,7 @@ content/posts/my-post/
 ## Deploying
 
 Push to `main` — the GitHub Action builds and deploys to
-https://lweck.github.io/lrweck/
+https://lweck.github.io/posts/
 
 First deploy: enable Pages in repo **Settings → Pages** and set source to **GitHub Actions**.
 
