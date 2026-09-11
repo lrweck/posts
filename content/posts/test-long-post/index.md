@@ -7,6 +7,8 @@ categories: ["testing"]
 draft: false
 ---
 
+{{< katex >}}
+
 This is a long-form test post to check typography, headings, table of contents, reading time and pagination across many sections.
 
 ## What is a long post?
