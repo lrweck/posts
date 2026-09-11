@@ -1,0 +1,20 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "posts"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Sharing ideas and things I come across in my day-to-day"
+
+[params.author]
+  name = "lweck"
+  headline = "Sharing ideas and things I see in my day-to-day"
+  bio = "Developer writing about tech, observations, and experiments."
+  links = [
+    { github = "https://github.com/lweck" },
+  ]
