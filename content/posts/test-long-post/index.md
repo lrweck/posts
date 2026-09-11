@@ -17,7 +17,7 @@ A long post gives the browser a chance to show scrollable content, sticky table 
 
 ### Paragraphs and emphasis
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Bold text** works well, as does *italic text* and `inline code`. You can also have ~~strikethrough~~ and `[links](https://gohugo.io)`.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Bold text** works well, as does *italic text* and `inline code`. You can also have ~~strikethrough~~ and [links](https://gohugo.io).
 
 > Blockquotes are rendered as callouts. This is a quoted paragraph that spans multiple lines of text to force a nice blockquote visual with proper spacing and indentation on both light and dark themes.
 
