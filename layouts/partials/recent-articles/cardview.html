@@ -16,11 +16,6 @@
       <div class="relative z-10 mt-6 text-sm text-neutral-500 dark:text-neutral-400">
         {{ partial "functions/date.html" $page.Date }} &middot; {{ $page.ReadingTime }} min read
       </div>
-      <span
-        class="relative z-10 mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-5 py-3 font-semibold text-white shadow-lg hover:bg-primary-500">
-        {{ i18n "recent.show_more" | default "Read the post" }}
-        {{ partial "icon.html" "link" }}
-      </span>
     </article>
   {{ end }}
 {{ end }}
