@@ -1,11 +1,9 @@
 .PHONY: new-post serve build deploy help
 
-DEPS := docker
-
 # Create a new post
 new-post:
 	@test -n "$(SLUG)" || (echo "Usage: make new-post SLUG=my-post-title"; exit 1)
-	@mkdir -p "content/posts/$(SLUG)"
+	@mkdir -p "content/blog/$(SLUG)"
 	@TITLE="$(shell echo '$(SLUG)' | sed 's/-/ /g; s/\b\(.\)/\U\1/g')"; \
 	DATE="$(shell date +%Y-%m-%d)"; \
 	printf '%s\n' \
@@ -18,8 +16,8 @@ new-post:
 	  'draft: false' \
 	  '---' \
 	  '' \
-	  'Your content here.' > "content/posts/$(SLUG)/index.md"
-	@echo "Created content/posts/$(SLUG)/index.md"
+	  'Your content here.' > "content/blog/$(SLUG)/index.md"
+	@echo "Created content/blog/$(SLUG)/index.md"
 
 # Live dev server (http://localhost:1313/posts/)
 serve:
