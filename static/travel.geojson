@@ -3,12 +3,12 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "name": "Casa", "when": "" },
+      "properties": { "name": "Home", "when": "" },
       "geometry": { "type": "Point", "coordinates": [-49.52, -27.06] }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Tóquio", "when": "2010" },
+      "properties": { "name": "Tokyo", "when": "2010" },
       "geometry": { "type": "Point", "coordinates": [139.6503, 35.6762] }
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "name": "Montevidéu", "when": "2017" },
+      "properties": { "name": "Montevideo", "when": "2017" },
       "geometry": { "type": "Point", "coordinates": [-56.1645, -34.9011] }
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "name": "Budapeste", "when": "2017, 2025" },
+      "properties": { "name": "Budapest", "when": "2017, 2025" },
       "geometry": { "type": "Point", "coordinates": [19.0402, 47.4979] }
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "name": "Praga", "when": "2017" },
+      "properties": { "name": "Prague", "when": "2017" },
       "geometry": { "type": "Point", "coordinates": [14.4378, 50.0755] }
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "name": "Segóvia", "when": "2025" },
+      "properties": { "name": "Segovia", "when": "2025" },
       "geometry": { "type": "Point", "coordinates": [-4.1088, 40.9429] }
     },
     {
@@ -108,7 +108,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "name": "Sevilha", "when": "2025" },
+      "properties": { "name": "Seville", "when": "2025" },
       "geometry": { "type": "Point", "coordinates": [-5.9845, 37.3891] }
     }
   ]
