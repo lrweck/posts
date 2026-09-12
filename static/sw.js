@@ -30,12 +30,17 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   event.respondWith(
-    fetch(event.request)
-      .then((response) => {
-        const copy = response.clone();
-        caches.open(CACHE).then((c) => c.put(event.request, copy));
-        return response;
-      })
-      .catch(() => caches.match(event.request))
+    caches.match(event.request).then((cached) => {
+      const fetched = fetch(event.request)
+        .then((response) => {
+          if (response.ok || response.type === "opaque") {
+            const copy = response.clone();
+            caches.open(CACHE).then((c) => c.put(event.request, copy));
+          }
+          return response;
+        })
+        .catch(() => cached);
+      return cached || fetched;
+    })
   );
 });
