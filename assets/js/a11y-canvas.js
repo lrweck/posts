@@ -43,9 +43,9 @@
     wire("[id$='-disable-blur']");
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
+  if (document.readyState === "complete") {
     init();
+  } else {
+    document.addEventListener("DOMContentLoaded", init);
   }
 })();
