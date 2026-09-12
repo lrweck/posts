@@ -3,10 +3,7 @@ const start = () => {
   if (!container || !window.L) return;
   const Lgeo = window.L.geoJSON || window.L.geoJson;
 
-  const dark = document.documentElement.classList.contains("dark");
-  const base = dark
-    ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-    : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+  const base = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
   const attr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
   const map = window.L.map("travel-map", { scrollWheelZoom: false });
