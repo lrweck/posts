@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <!-- static variant: SMIL animate over feGaussianBlur+feTurbulence repainted the full-viewport layer every frame on every page; drift was 16-26s, not worth the CPU -->
   <defs>
     <radialGradient id="violet" cx="50%" cy="50%" r="50%">
       <stop offset="0" stop-color="#7c3aed" stop-opacity=".72"/>
@@ -14,21 +15,13 @@
   </defs>
   <rect width="1600" height="900" fill="#061126"/>
   <g filter="url(#blur)">
-    <circle cx="280" cy="160" r="290" fill="url(#violet)">
-      <animate attributeName="cx" values="280;440;280" dur="22s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="160;260;160" dur="18s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1320" cy="690" r="350" fill="url(#blue)">
-      <animate attributeName="cx" values="1320;1160;1320" dur="26s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="690;580;690" dur="20s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="900" cy="250" r="190" fill="url(#blue)" opacity=".7">
-      <animate attributeName="cy" values="250;390;250" dur="16s" repeatCount="indefinite"/>
-    </circle>
+    <circle cx="360" cy="230" r="290" fill="url(#violet)"/>
+    <circle cx="1240" cy="630" r="350" fill="url(#blue)"/>
+    <circle cx="900" cy="320" r="190" fill="url(#blue)" opacity=".7"/>
   </g>
   <g fill="none" stroke="url(#line)" stroke-width="1.5" opacity=".75">
-    <path d="M-80 670 C250 420 470 850 770 600 S1320 280 1680 490"><animate attributeName="d" dur="19s" repeatCount="indefinite" values="M-80 670 C250 420 470 850 770 600 S1320 280 1680 490;M-80 570 C250 720 470 410 770 640 S1320 390 1680 390;M-80 670 C250 420 470 850 770 600 S1320 280 1680 490"/></path>
-    <path d="M-60 760 C230 520 500 780 810 690 S1340 420 1660 610" opacity=".65"><animate attributeName="d" dur="24s" repeatCount="indefinite" values="M-60 760 C230 520 500 780 810 690 S1340 420 1660 610;M-60 660 C230 750 500 510 810 730 S1340 330 1660 520;M-60 760 C230 520 500 780 810 690 S1340 420 1660 610"/></path>
+    <path d="M-80 670 C250 420 470 850 770 600 S1320 280 1680 490"/>
+    <path d="M-60 760 C230 520 500 780 810 690 S1340 420 1660 610" opacity=".65"/>
   </g>
   <rect width="1600" height="900" filter="url(#grain)" opacity=".55"/>
 </svg>
