@@ -10,3 +10,15 @@ heroButtons:
     url: "https://github.com/lrweck"
     style: "outline"
 ---
+
+{{< feature-grid >}}
+{{< feature icon="file-lines" title="Read the posts" url="/posts/" >}}
+Technical learnings, experiments, and whatever else comes up.
+{{< /feature >}}
+{{< feature icon="tag" title="Browse tags" url="/tags/" >}}
+Jump straight to the topics you care about.
+{{< /feature >}}
+{{< feature icon="github" title="On GitHub" url="https://github.com/lrweck" >}}
+The code behind this blog and other experiments.
+{{< /feature >}}
+{{< /feature-grid >}}

@@ -5,14 +5,14 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "indigo" # custom scheme in assets/css/schemes/indigo.css (also valid: blowfish, ocean, slate, github, ...)
-defaultAppearance = "light" # valid options: light or dark
+colorScheme = "burufugu" # valid options: blowfish, burufugu, avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, slate, github, one-light
+defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
 enableA11y = true
 enableSearch = true
 enableCodeCopy = true
-enableStructuredBreadcrumbs = false
+enableStructuredBreadcrumbs = true
 # enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
 
 replyByEmail = false
@@ -25,8 +25,8 @@ disableImageOptimizationMD = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-# defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
-# backgroundCanvas = false # render defaultBackgroundImage as a fixed backdrop on every page
+defaultBackgroundImage = "images/v3/site-background.svg" # used as a fixed backdrop on every page
+backgroundCanvas = true # render defaultBackgroundImage as a fixed backdrop on every page
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
 # defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
@@ -54,8 +54,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 # metaDescriptionOrder = ["summary", "description", "site"] # Controls the fallback order for the HTML meta description. Valid values are "summary", "description", and "site".
 
 [header]
-  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur, floating
-  # mobileMenuStyle = "fullscreen" # valid options: fullscreen, dropdown
+  layout = "floating" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur, floating
+  mobileMenuStyle = "dropdown" # valid options: fullscreen, dropdown
 
 [footer]
   showMenu = true
