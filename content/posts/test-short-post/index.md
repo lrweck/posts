@@ -4,6 +4,8 @@ date: 2026-09-09
 description: "A minimal post with just a few lines"
 tags: ["test", "short"]
 categories: ["testing"]
+series: ["layout-testing"]
+series_order: 3
 draft: false
 ---
 

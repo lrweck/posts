@@ -4,6 +4,8 @@ date: 2026-09-10
 description: "A post focused on syntax highlighting with several languages"
 tags: ["test", "code"]
 categories: ["testing"]
+series: ["layout-testing"]
+series_order: 2
 draft: false
 ---
 
@@ -59,4 +61,7 @@ Wrap code like `docker compose up` and `go test ./...` to see inline styles.
 }
 ```
 
-That's it for code highlighting tests.
+{{< mermaid >}}
+graph LR
+    A[Build] --> B[Test] --> C[Deploy]
+{{< /mermaid >}}

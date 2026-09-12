@@ -1,0 +1,16 @@
+{
+  "name": "posts",
+  "short_name": "posts",
+  "description": "Sharing ideas and things I come across in my day-to-day",
+  "lang": "en",
+  "start_url": "/posts/",
+  "scope": "/posts/",
+  "theme_color": "#0f766e",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    { "src": "/posts/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/posts/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/posts/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

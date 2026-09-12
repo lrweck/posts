@@ -4,6 +4,8 @@ date: 2026-09-11
 description: "A long-form test with headings, lists, quotes, tables and math"
 tags: ["test", "long", "markdown"]
 categories: ["testing"]
+series: ["layout-testing"]
+series_order: 1
 draft: false
 ---
 
@@ -72,4 +74,6 @@ Another paragraph follows, because real blog posts have many paragraphs and we w
 
 ## Conclusion
 
-End of the test article. The footer should show author, tags and categories, plus previous/next pagination.
+End of the test article[^1]. The footer should show author, tags and categories, plus previous/next pagination.
+
+[^1]: This is a footnote rendered by Hugo's native markdown support.
