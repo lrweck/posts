@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Casa",
+        "when": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-49.52, -27.06]
+      }
+    }
+  ]
+}
