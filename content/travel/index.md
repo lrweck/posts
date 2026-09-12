@@ -11,4 +11,4 @@ A simple record of places I've been.
 
 <link rel="stylesheet" href="../vendor/leaflet.css">
 <script src="../vendor/leaflet.js"></script>
-<script src="../travel-map.js"></script>
+<script src="../travel-map.v2.js"></script>
