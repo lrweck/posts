@@ -11,6 +11,8 @@ const start = () => {
     zoomAnimation: false,
     minZoom: 3,
   });
+  const tilePane = document.querySelector("#travel-map .leaflet-tile-pane");
+  if (tilePane) tilePane.style.transform = "translateY(-24px)";
   window.L.tileLayer(base, { attribution: attr, maxZoom: 19 }).addTo(map);
 
   fetch("../travel.geojson")
