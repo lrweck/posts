@@ -7,8 +7,14 @@
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@600;700;800&display=swap"
   rel="stylesheet"></noscript>
 <script>
+  {{ $stamp := now.Unix }}
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("{{ "sw.js" | relURL }}");
+    navigator.serviceWorker.register("{{ "sw.js" | relURL }}?v={{ $stamp }}");
+    navigator.serviceWorker.addEventListener("message", (event) => {
+      if (event.data && event.data.type === "APP_UPDATED") {
+        window.location.reload();
+      }
+    });
   }
 </script>
 {{ $a11yCanvas := resources.Get "js/a11y-canvas.js" | resources.Minify | resources.Fingerprint "sha512" }}
