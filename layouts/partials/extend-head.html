@@ -10,11 +10,6 @@
   {{ $stamp := now.Unix }}
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("{{ "sw.js" | relURL }}?v={{ $stamp }}");
-    navigator.serviceWorker.addEventListener("message", (event) => {
-      if (event.data && event.data.type === "APP_UPDATED") {
-        window.location.reload();
-      }
-    });
   }
 </script>
 {{ $a11yCanvas := resources.Get "js/a11y-canvas.js" | resources.Minify | resources.Fingerprint "sha512" }}
