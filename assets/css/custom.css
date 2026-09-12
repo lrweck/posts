@@ -54,6 +54,13 @@ h6 {
   color: rgb(var(--color-neutral-200));
 }
 
-html.dark .leaflet-tile-pane {
+html.dark #travel-map {
   filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9) saturate(0.7);
+}
+
+#travel-map .leaflet-pane,
+#travel-map .leaflet-popup-pane,
+#travel-map .leaflet-control-container .leaflet-top,
+#travel-map .leaflet-control-container .leaflet-bottom {
+  z-index: 40;
 }

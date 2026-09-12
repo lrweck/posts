@@ -6,7 +6,7 @@ const start = () => {
   const base = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
   const attr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
-  const map = window.L.map("travel-map", { scrollWheelZoom: false });
+  const map = window.L.map("travel-map", { scrollWheelZoom: false, zoomAnimation: false });
   window.L.tileLayer(base, { attribution: attr, maxZoom: 19 }).addTo(map);
 
   fetch("../travel.geojson")
