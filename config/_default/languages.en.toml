@@ -13,6 +13,7 @@ title = "posts"
 
 [params.author]
   name = "lrweck"
+  image = "avatar.svg"
   headline = "Sharing ideas and things I see in my day-to-day"
   bio = "Developer writing about tech, observations, and experiments."
   links = [
