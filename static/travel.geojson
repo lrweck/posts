@@ -3,14 +3,113 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "name": "Casa",
-        "when": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.52, -27.06]
-      }
+      "properties": { "name": "Casa", "when": "" },
+      "geometry": { "type": "Point", "coordinates": [-49.52, -27.06] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Tóquio", "when": "2010" },
+      "geometry": { "type": "Point", "coordinates": [139.6503, 35.6762] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Kamakura", "when": "2010" },
+      "geometry": { "type": "Point", "coordinates": [139.5467, 35.3192] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Buenos Aires", "when": "2017" },
+      "geometry": { "type": "Point", "coordinates": [-58.3816, -34.6037] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Montevidéu", "when": "2017" },
+      "geometry": { "type": "Point", "coordinates": [-56.1645, -34.9011] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Punta del Diablo", "when": "2017" },
+      "geometry": { "type": "Point", "coordinates": [-53.5458, -34.0453] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "El Calafate", "when": "2017" },
+      "geometry": { "type": "Point", "coordinates": [-72.2613, -50.3359] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Ushuaia", "when": "2017" },
+      "geometry": { "type": "Point", "coordinates": [-68.3105, -54.8003] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Wrocław", "when": "2017" },
+      "geometry": { "type": "Point", "coordinates": [17.0385, 51.1079] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Kraków", "when": "2017" },
+      "geometry": { "type": "Point", "coordinates": [19.945, 50.0647] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Budapeste", "when": "2017, 2025" },
+      "geometry": { "type": "Point", "coordinates": [19.0402, 47.4979] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Bratislava", "when": "2017" },
+      "geometry": { "type": "Point", "coordinates": [17.1077, 48.1486] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Praga", "when": "2017" },
+      "geometry": { "type": "Point", "coordinates": [14.4378, 50.0755] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Lima", "when": "2019" },
+      "geometry": { "type": "Point", "coordinates": [-77.0428, -12.0464] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Paita", "when": "2019" },
+      "geometry": { "type": "Point", "coordinates": [-81.1143, -5.0892] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Piura", "when": "2019" },
+      "geometry": { "type": "Point", "coordinates": [-80.6328, -5.1945] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Cusco", "when": "2019" },
+      "geometry": { "type": "Point", "coordinates": [-71.9675, -13.5319] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Segóvia", "when": "2025" },
+      "geometry": { "type": "Point", "coordinates": [-4.1088, 40.9429] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Madrid", "when": "2025" },
+      "geometry": { "type": "Point", "coordinates": [-3.7038, 40.4168] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Toledo", "when": "2025" },
+      "geometry": { "type": "Point", "coordinates": [-4.0273, 39.8628] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Córdoba", "when": "2025" },
+      "geometry": { "type": "Point", "coordinates": [-4.7794, 37.8882] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Sevilha", "when": "2025" },
+      "geometry": { "type": "Point", "coordinates": [-5.9845, 37.3891] }
     }
   ]
 }
