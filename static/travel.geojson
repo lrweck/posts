@@ -110,6 +110,16 @@
       "type": "Feature",
       "properties": { "name": "Seville", "when": "2025" },
       "geometry": { "type": "Point", "coordinates": [-5.9845, 37.3891] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "São Paulo", "when": "2018" },
+      "geometry": { "type": "Point", "coordinates": [-46.6333, -23.5505] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Rio Branco", "when": "2019" },
+      "geometry": { "type": "Point", "coordinates": [-67.81, -10.0346] }
     }
   ]
 }
