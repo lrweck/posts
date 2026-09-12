@@ -11,3 +11,5 @@
     navigator.serviceWorker.register("{{ "sw.js" | relURL }}");
   }
 </script>
+{{ $a11yCanvas := resources.Get "js/a11y-canvas.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script src="{{ $a11yCanvas.RelPermalink }}" integrity="{{ $a11yCanvas.Data.Integrity }}" defer></script>
