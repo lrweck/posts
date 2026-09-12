@@ -58,17 +58,24 @@
         s.async = true;
         document.head.appendChild(s);
       }
-      var target = document.querySelector("main") || document.body;
-      if ("IntersectionObserver" in window) {
-        var io = new IntersectionObserver(function (entries) {
-          if (entries.some(function (e) { return e.isIntersecting; })) {
-            io.disconnect();
-            load();
-          }
-        }, { rootMargin: "1200px" });
-        io.observe(target);
+      function start() {
+        var target = document.querySelector("main") || document.body;
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(function (entries) {
+            if (entries.some(function (e) { return e.isIntersecting; })) {
+              io.disconnect();
+              load();
+            }
+          }, { rootMargin: "1200px" });
+          io.observe(target);
+        } else {
+          load();
+        }
+      }
+      if (document.body) {
+        start();
       } else {
-        load();
+        document.addEventListener("DOMContentLoaded", start);
       }
     })();
   </script>
