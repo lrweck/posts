@@ -2,28 +2,26 @@
 {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 {{ range $i, $page := first $recentArticles $pages }}
   {{ if eq $i 0 }}
-    <section class="mb-16 text-center">
-      <span class="inline-flex items-center gap-2 rounded-full bg-primary-100 px-4 py-1 text-sm font-bold uppercase tracking-[0.25em] text-primary-600 dark:bg-primary-950 dark:text-primary-400">
+    <article class="group relative mx-auto mb-14 max-w-4xl overflow-hidden rounded-2xl border border-neutral-300/80 bg-white/60 p-8 text-center shadow-sm backdrop-blur-xl transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary-500/10 dark:border-neutral-600/80 dark:bg-neutral-900/50 sm:p-12">
+      <a href="{{ $page.RelPermalink }}" class="absolute inset-0" aria-label="{{ $page.Title }}"></a>
+      <span class="relative z-10 inline-flex items-center gap-2 rounded-full bg-primary-100 px-4 py-1 text-sm font-bold uppercase tracking-[0.25em] text-primary-600 dark:bg-primary-950 dark:text-primary-400">
         {{ i18n "recent.latest" | default "Latest" }}
       </span>
-      <h2 class="mx-auto mt-6 max-w-3xl text-balance text-4xl font-black leading-[1.05] tracking-tighter text-neutral-900 dark:text-white sm:text-5xl">
-        <a href="{{ $page.RelPermalink }}" class="hover:underline decoration-primary-500 underline-offset-2">
-          {{ $page.Title | emojify }}
-        </a>
+      <h2 class="relative z-10 mx-auto mt-6 max-w-3xl text-balance text-4xl font-black leading-[1.05] tracking-tighter text-neutral-900 dark:text-white sm:text-5xl">
+        {{ $page.Title | emojify }}
       </h2>
-      <p class="mx-auto mt-6 max-w-3xl text-balance text-lg leading-8 text-neutral-600 dark:text-neutral-300">
+      <p class="relative z-10 mx-auto mt-6 max-w-3xl text-balance text-lg leading-8 text-neutral-600 dark:text-neutral-300">
         {{ $page.Description | default ($page.Summary | plainify) }}
       </p>
-      <div class="mt-6 text-sm text-neutral-500 dark:text-neutral-400">
+      <div class="relative z-10 mt-6 text-sm text-neutral-500 dark:text-neutral-400">
         {{ partial "functions/date.html" $page.Date }} &middot; {{ $page.ReadingTime }} min read
       </div>
-      <a
-        href="{{ $page.RelPermalink }}"
-        class="not-prose mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-5 py-3 font-semibold text-white shadow-lg shadow-primary-500/20 hover:-translate-y-0.5 hover:bg-primary-500">
+      <span
+        class="relative z-10 mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-5 py-3 font-semibold text-white shadow-lg shadow-primary-500/20 transition group-hover:-translate-y-0.5 group-hover:bg-primary-500">
         {{ i18n "recent.show_more" | default "Read the post" }}
         {{ partial "icon.html" "link" }}
-      </a>
-    </section>
+      </span>
+    </article>
   {{ end }}
 {{ end }}
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
