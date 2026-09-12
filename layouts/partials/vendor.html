@@ -27,8 +27,13 @@
 {{/* Katex — lazy: loaded only when math content approaches the viewport.
   The theme's eager <link> blocked first paint (FCP); its deferred 78KB bundle
   also delayed DOMContentLoaded on pages with math. Injected resources are
-  async and never gate rendering. */}}
-{{ if .Page.HasShortcode "katex" }}
+  async and never gate rendering.
+  Gate: the theme requires an explicit {{< katex >}} shortcode; we also glow
+  when the content itself contains math ($...$ / $$...$$) so posts don't break.
+  ponytail: heuristic — a lone "$5" won't match, but prose with two $ is
+  treated as math. Tighten only if it misfires on real content. */}}
+{{ $katexMath := or (findRE `\$[^$\n]+\$` .Page.RawContent) (strings.Contains .Page.RawContent "$$") }}
+{{ if or (.Page.HasShortcode "katex") $katexMath }}
   {{ $katexCSS := resources.Get "lib/katex/katex.min.css" }}
   {{ $katexCSS = $katexCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
   {{ $katexLib := resources.Get "lib/katex/katex.min.js" }}
