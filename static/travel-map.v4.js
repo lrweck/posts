@@ -6,7 +6,11 @@ const start = () => {
   const base = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
   const attr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
-  const map = window.L.map("travel-map", { scrollWheelZoom: false, zoomAnimation: false });
+  const map = window.L.map("travel-map", {
+    scrollWheelZoom: false,
+    zoomAnimation: false,
+    minZoom: 3,
+  });
   window.L.tileLayer(base, { attribution: attr, maxZoom: 19 }).addTo(map);
 
   fetch("../travel.geojson")
@@ -15,7 +19,7 @@ const start = () => {
       const layer = Lgeo(geojson, {
         pointToLayer: (f, latlng) =>
           window.L.circleMarker(latlng, {
-            radius: 7,
+            radius: 5,
             fillColor: "#8b5cf6",
             color: "#a78bfa",
             weight: 1,
