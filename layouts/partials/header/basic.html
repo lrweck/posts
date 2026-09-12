@@ -22,8 +22,9 @@
     {{ end }}
   {{ end }}
   {{ if not .Site.Params.disableTextInHeader | default true }}
-    <a href="{{ "" | relLangURL }}" class="text-base font-medium truncate min-w-0 shrink">
-      Home
+    <a href="{{ "" | relLangURL }}" class="flex items-center gap-2 text-base font-medium truncate min-w-0 shrink">
+      {{ partial "icon.html" "home" }}
+      <span>Home</span>
     </a>
   {{ end }}
   <div class="flex items-center ms-auto">
