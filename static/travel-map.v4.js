@@ -16,8 +16,8 @@ fetch("../travel.geojson")
       pointToLayer: (f, latlng) =>
         window.L.circleMarker(latlng, {
           radius: 5,
-          fillColor: "#8b5cf6",
-          color: "#a78bfa",
+          fillColor: "#10b981",
+          color: "#34d399",
           weight: 1,
           fillOpacity: 0.9,
         }),
