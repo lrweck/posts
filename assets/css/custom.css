@@ -75,3 +75,35 @@ html.dark #travel-map {
 #travel-map .leaflet-control-container .leaflet-bottom {
   z-index: 40;
 }
+.landing-rise-1,
+.landing-rise-2,
+.landing-rise-3,
+.landing-rise-4,
+.landing-rise-5,
+.landing-rise-6,
+.landing-rise-7,
+.landing-rise-8 {
+  transform: none !important;
+}
+
+/* Reserva altura estável pro hero na home — sem reflow no refresh */
+.landing-hero {
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+}
+.landing-hero .landing-content {
+  margin-block-start: clamp(1.25rem, 4vh, 3.5rem);
+}
+@media (prefers-reduced-motion: reduce) {
+  .landing-rise-1,
+  .landing-rise-2,
+  .landing-rise-3,
+  .landing-rise-4,
+  .landing-rise-5,
+  .landing-rise-6,
+  .landing-rise-7,
+  .landing-rise-8 {
+    animation: none !important;
+  }
+}
