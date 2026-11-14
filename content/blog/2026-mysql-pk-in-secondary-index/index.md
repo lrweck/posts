@@ -2,7 +2,7 @@
 title: "This Week I Learned: MySQL Sneaks Your Primary Key Into Every Secondary Index"
 date: 2026-11-14
 description: "I declared KEY (a) and got KEY (a, id) for free — and I can prove it with index sizes"
-tags: ["mysql", "database", "index"]
+tags: ["mysql", "database", "index", "twil"]
 categories: ["dev"]
 draft: false
 ---
